@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleMed Connect</title> 
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.JS">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Add your logo here -->
+            <h1>TeleMed Connect</h1>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Doctors</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <section id="intro-section">
+                <p>Connect with healthcare professionals from the comfort of your home.</p>
+            </section>
+
+            <section id="form-section">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required><br>
+                    
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required><br>
+                    
+                    <label for="reason">Reason for Visit:</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea><br>
+                    
+                    <button type="submit">Schedule Appointment</button>
+                </form>
+            </section>
+
+            <section id="table-section">
+                <h2>Available Doctors</h2>
+                <table class="doctor-table">
+                    <thead>
+                        <tr>
+                            <th>Doctor Name</th>
+                            <th>Specialization</th>
+                            <th>Available Times</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. John Smith</td>
+                            <td>General Practitioner</td>
+                            <td>Mon-Fri, 9AM-5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Emily Johnson</td>
+                            <td>Pediatrician</td>
+                            <td>Tue-Sat, 10AM-6PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+        </div>
+
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <div class="link-container">
+                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#"><i class="fas fa-user-md"></i> Our Doctors</a>
+                <a href="#"><i class="fas fa-question-circle"></i> FAQs</a>
+                <a href="#"><i class="fas fa-phone"></i> Contact Us</a>
+            </div>
+            <h2>Why Choose TeleMed Connect?</h2>
+            <ul class="feature-list">
+                <li><i class="fas fa-clock"></i> 24/7 Availability</li>
+                <li><i class="fas fa-home"></i> Consult from Home</li>
+                <li><i class="fas fa-user-md"></i> Expert Doctors</li>
+                <li><i class="fas fa-lock"></i> Secure and Confidential</li>
+            </ul>
+        </aside>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TeleMed Connect. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
